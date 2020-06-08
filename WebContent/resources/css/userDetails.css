@@ -1,0 +1,82 @@
+@import
+	url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+body {
+	background: #c2e59c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #c2e59c, #64b3f4);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #c2e59c, #64b3f4);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: black;
+	font-family: serif;
+	
+}
+
+table {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 400px;
+	transition: all 0.2s ease;
+	transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	padding: 20px;
+}
+
+.name {
+	font-size: 30px;
+	border-bottom: 2px solid #888;
+	margin-bottom: 20px;
+}
+
+.name:first-letter {
+	font-size: 300%;
+}
+
+.label {
+	width: 70px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.phone, .mobile, .email {
+	display: inline-block;
+}
+
+.login-txtBox{
+	width: -webkit-fill-available;
+}
+
+.login-table-td {
+	white-space: nowrap;
+	padding: 20px;
+	padding-right: 30px;
+}
+
+input[type=text], input[type=password], input[type=submit] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button, input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 150%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+input[type=submit]:hover {
+	opacity: 0.8;
+}

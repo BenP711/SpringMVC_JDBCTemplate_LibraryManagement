@@ -1,0 +1,37 @@
+create database LibraryManagement;
+use LibraryManagement;
+
+create table Book(
+bookId int auto_increment primary key,
+bookName varchar(30),
+author varchar(30),
+isbn varchar(30),
+numberOfCopies int
+);
+
+create table User(
+userId int auto_increment primary key,
+userName varchar(30),
+password varchar(50),
+category varcharacter(1),
+emailId varchar(50),
+phone int
+);
+
+create table BookIssue(
+bookIssueId int auto_increment primary key,
+userId int,
+bookId int,
+issueDate datetime,
+foreign key(userId) references User(userId),
+foreign key(bookId) references Book(bookId)
+);
+
+insert into Book(bookName, author, isbn, numberOfCopies) values('Java', 'Mike', '12344566', 10);
+insert into Book(bookName, author, isbn, numberOfCopies) values('Python', 'Ben', '76275679', 4);
+insert into Book(bookName, author, isbn, numberOfCopies) values('Scala', 'Jen', '30473628', 6);
+insert into Book(bookName, author, isbn, numberOfCopies) values('C++', 'Walter', '85648393', 15);
+insert into Book(bookName, author, isbn, numberOfCopies) values('C', 'Brian', '85729204', 7);
+insert into Book(bookName, author, isbn, numberOfCopies) values('HTML', 'Chung', '46637982', 3);
+insert into Book(bookName, author, isbn, numberOfCopies) values('PHP', 'Philip', '05847362', 8);
+ 
